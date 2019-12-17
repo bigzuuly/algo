@@ -5,10 +5,12 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 /*
+ * https://en.wikipedia.org/wiki/Selection_sort
+ * 
  * Time Complexity
- *  O(n2) - Best
- *  O(n2) - Average 
- *  O(n2) - Worse
+ *  O(n2) Comparisons / O(n) Swaps - Best
+ *  O(n2) Comparisons / O(n) Swaps - Average 
+ *  O(n2) Comparisons / O(n) Swaps - Worse
  *  
  *  Space Complexity
  *   O(n)

@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 /*
+ * https://en.wikipedia.org/wiki/Bubble_sort
+ * 
  * Time Complexity
  *  O(n) - Best
  *  O(n2) - Average 
@@ -23,12 +25,12 @@ public class BubbleSort<E extends Comparable<? super E>> {
 		//repeat n-1 as the nth element will be sorted after the first pass
 		
 		for(int i=0; i < list.size(); i++) {
-			for(int j=0; j < list.size()-(i+1); j++) {	
-				if(list.get(j).compareTo(list.get(j+1)) > 0) {
+			for(int j=i; j < list.size(); j++) {	
+				if(list.get(j).compareTo(list.get(i)) < 0) {
 					//swap
 					E temp = list.get(j);
-					list.set(j,list.get(j+1));
-					list.set(j+1, temp);
+					list.set(j,list.get(i));
+					list.set(i, temp);
 				}
 			}
 			

@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 /* Divide And Conquer
  * 
+ * https://en.wikipedia.org/wiki/Merge_sort
+ * 
  * Time Complexity
  *  O(n log n) - Best
  *  O(n log n) - Average

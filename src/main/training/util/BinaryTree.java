@@ -162,6 +162,22 @@ public class BinaryTree {
     	return findMin(start.left);
     }
     
+    Integer maxHeight = 0;
+    public void getHeight(Node head, Integer height) {
+    	if(head == null) return;
+    	
+    	height++;
+    	
+    	if(height > maxHeight) {
+    		maxHeight = height;
+    	}
+    	
+    	
+    	getHeight(head.left, height);
+    	getHeight(head.right, height);
+    	
+    }
+    
 	public static void main(String[] args) {
 		//create example binary tree
 		
@@ -188,14 +204,16 @@ public class BinaryTree {
 		}
 		*/
 		
-		System.out.println("####");
-		bt.delete(8);
+		//System.out.println("####");
+		//bt.delete(8);
 		//Node result = bt.search(6, bt.head);
 		
-		bt.printTree(bt.head);
+		//bt.printTree(bt.head);
 		//Node min = bt.findMin(bt.head.right);
 		//System.out.println("MMMMin: " + min.value);
 
+		bt.getHeight(bt.head, 0);
+		System.out.println("Height: " + bt.maxHeight);
 		
 	}
 }

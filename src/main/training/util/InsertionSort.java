@@ -5,10 +5,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /*
+ * https://en.wikipedia.org/wiki/Insertion_sort
+ * 
  * Time Complexity
- *  O(n) - Best
- *  O(n2) - Average 
- *  O(n2) - Worse
+ *  O(n) comparisons, O(1) swaps - Best
+ *  О(n2) comparisons and swaps - Average 
+ *  О(n2) comparisons and swaps - Worse
  *  
  *  Space Complexity
  *   O(n)
