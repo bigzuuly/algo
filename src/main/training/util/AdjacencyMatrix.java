@@ -56,7 +56,7 @@ public class AdjacencyMatrix {
 		for(int i=0; i<matrix.get(vertex).size(); i++) {
 			Edge node = matrix.get(vertex).get(i);
 			if( null != node) {
-				neighbors.add(new Integer(i));
+				neighbors.add(Integer.valueOf(i));
 			}
 		}
 

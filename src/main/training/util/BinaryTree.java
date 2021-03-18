@@ -18,7 +18,7 @@ public class BinaryTree {
     	private Node left = null;
     	private Node right = null;
     	private Integer value = null;
-    	private Boolean isRed = false;  // use for red black tree
+      private Boolean isRed = false;  // use for red black tree
     	
     	public Node() {
     	}

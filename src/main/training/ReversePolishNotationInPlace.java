@@ -2,8 +2,6 @@ package main.training;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.EmptyStackException;
-import java.util.Stack;
 
 public class ReversePolishNotationInPlace {
 
@@ -60,7 +58,7 @@ public class ReversePolishNotationInPlace {
         
         
         //continue until 1 element is left
-        return new Integer(tokensArray.get(0));
+        return Integer.valueOf(tokensArray.get(0));
     }
 	
 	public static void main(String[] args) throws Exception {

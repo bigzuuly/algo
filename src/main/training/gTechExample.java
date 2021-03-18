@@ -67,7 +67,7 @@ public class gTechExample {
 			
 	public static void main (String[] args) {
 		
-		int[] invalidInput = {7,2,3,1,9};
+		// int[] invalidInput = {7,2,3,1,9};
 		int[] validInput = {-3,4,2,5,11};
 		
 		gTechExample example = new gTechExample(8);

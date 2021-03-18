@@ -17,7 +17,7 @@ public class ReversePolishNotation {
         for(int i=0; i<tokens.length; i++){
             String currentToken = tokens[i];
             if(!operators.contains(currentToken)){
-                stack.push(new Integer(currentToken));
+                stack.push(Integer.valueOf(currentToken));
             }else{
             	Integer b;
             	Integer a;

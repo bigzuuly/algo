@@ -2,7 +2,7 @@ package main.training.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.ArrayList;
+
 
 /* https://en.wikipedia.org/wiki/Heapsort
  * 

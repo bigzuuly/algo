@@ -42,7 +42,7 @@ public class Dijkstra {
 	
 	public Dijkstra(int numVertices) {
 		for(int i=0; i < numVertices; i++) {
-			verticesList.put(new Integer(i), new Vertex(Integer.MAX_VALUE));
+			verticesList.put(Integer.valueOf(i), new Vertex(Integer.MAX_VALUE));
 		}
 		
 		shortestPathTree = new AdjacencyMatrix(numVertices);
